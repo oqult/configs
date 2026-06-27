@@ -1,5 +1,5 @@
 [Unit]
-Description=fix sleep for gigabyte motherboard
+Description=fix sleep for gigabyte aorus pro ax b550i motherboard
 
 [Service]
 Type=oneshot
