@@ -1,0 +1,10 @@
+[Unit]
+Description=fix sleep for gigabyte motherboard
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=sh -c 'echo GPP0 > /proc/acpi/wakeup'
+
+[Install]
+WantedBy=multi-user.target
