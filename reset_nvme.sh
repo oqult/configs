@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-DEV=nvme1n1   # ändra till ditt faktiska devicenamn
+DEV=nvme1n1
 PCI=$(basename $(readlink -f /sys/block/$DEV/device/device))
 sudo umount /dev/${DEV}* 2>/dev/null
 echo 1 | sudo tee /sys/bus/pci/devices/$PCI/remove
