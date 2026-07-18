@@ -1,5 +1,6 @@
 #!/bin/sh
 OUTPUT=HDMI-A-1
+# flatpak-spawn needed to use kscreen-doctor
 KSD="flatpak-spawn --host kscreen-doctor"
 
 if [ "$1" = "undo" ]; then
